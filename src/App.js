@@ -1,10 +1,15 @@
 import './App.css';
+import beer from './beer.svg'
 import ComingSoon from './components/ComingSoon';
 
 function App() {
   return (
     <div className="App">
-      <ComingSoon />
+    <header className="App-header">
+        <img src={beer} className="App-logo" alt="logo" />
+        <ComingSoon />
+      </header>
+      {/* <ComingSoon /> */}
     </div>
   );
 }
