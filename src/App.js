@@ -1,15 +1,9 @@
+// We dont really use this anymore - but i am too scared to delete it
 import './App.css';
-import beer from './beer.svg'
-import ComingSoon from './components/ComingSoon';
 
 function App() {
   return (
     <div className="App">
-    <header className="App-header">
-        <img src={beer} className="App-logo" alt="logo" />
-        <ComingSoon />
-      </header>
-      {/* <ComingSoon /> */}
     </div>
   );
 }
