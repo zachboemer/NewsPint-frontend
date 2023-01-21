@@ -15,6 +15,7 @@ root.render(
    <div>
       <Routes>
       <Route path="/" element={<ComingSoon />} />
+      <Route path="/articles" element={<Home />} />
       </Routes>
     </div>
   </Router>
