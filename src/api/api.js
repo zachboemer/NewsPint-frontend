@@ -1,7 +1,12 @@
 import axios from 'axios';
 
-const api = axios.create({
-  baseURL: process.env.NODE_ENV === 'development' ? 'http://localhost:5000' : 'https://your-app-name.herokuapp.com',
-});
+const baseURL = 'https://news-pint-backend.herokuapp.com/';
 
-export default api;
+export const getArticles = async () => {
+  try{
+      const response = await axios.get(`${baseURL}articles`);
+      return response.data;
+  }catch(error){
+      throw error;
+  }
+};
