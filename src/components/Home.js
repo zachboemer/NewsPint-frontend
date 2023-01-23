@@ -27,8 +27,8 @@ const Home = () => {
         });
 
         return(
-        <Card>
-            <Image src={article.image_url} wrapped ui={false} />
+        <Card  href={article.url} target="_blank" >
+            <Image src={article.image_url} wrapped ui={false}/>
             <Card.Content>
                 <Header as='h2'>{article.title}</Header>
                 <CardMeta>{article.author}</CardMeta>
