@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getArticles } from '../api/api';
-
-// getting a CORS error, need to look into that
+import { Card, Image, Header, CardMeta, Container, Grid } from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css';
 
 const Home = () => {
     const [articles, setArticles] = useState([]);
@@ -17,18 +17,39 @@ const Home = () => {
         }
         fetchArticles();
     }, []);
-    
+
+    const ArticleCard = ({ article }) => {
+        const date = new Date(article.publish_date);
+        const formattedDate = date.toLocaleDateString(undefined, {
+            year: 'numeric', 
+            month: 'long', 
+            day: 'numeric' 
+        });
+
+        return(
+        <Card>
+            <Image src={article.image_url} wrapped ui={false} />
+            <Card.Content>
+                <Header as='h2'>{article.title}</Header>
+                <CardMeta>{article.author}</CardMeta>
+                <CardMeta>{formattedDate}</CardMeta>
+                <Card.Description>{article.summary}</Card.Description>
+            </Card.Content>
+        </Card>
+        );
+    };
+
     return (
-        <div>
-            <h1>NewsPint</h1>
-            {articles.map(article => (
-                <div key={article.id}>
-                    <h2>{article.title}</h2>
-                    <img src={article.image_url} alt={article.title} />
-                    <p>{article.summary}</p>
-                    <a href={article.url}>Read more</a>
-                </div>
-            ))}
+        <div style={{ marginTop: "20px" }}>
+            <Container>
+                <Grid columns={4} centered>
+                    {articles.map(article => (
+                        <Grid.Column key={article.id}>
+                            <ArticleCard article={article} />
+                        </Grid.Column>
+                    ))}
+                </Grid>
+            </Container>
         </div>
     );
 }
