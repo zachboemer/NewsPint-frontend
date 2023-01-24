@@ -1,0 +1,29 @@
+$font-family_1: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+$font-family_2: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  monospace;
+$background-light: #5b1ceef8;
+$background-dark: #549af5f8;
+landing-page {
+  background-image: linear-gradient(
+    to bottom right,
+    $background-dark,
+    $background-light
+  );
+}
+
+body {
+  font-family: $font-family_1;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+code {
+  font-family: $font-family_2;
+}

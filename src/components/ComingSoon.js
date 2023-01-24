@@ -1,5 +1,5 @@
 import React from 'react';
-import beer from '../beer.svg'
+import beer from '../assets/beer.svg'
 
 const ComingSoon = () => {
     return (
