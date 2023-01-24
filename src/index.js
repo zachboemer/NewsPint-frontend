@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
-import './index.css';
-import App from './App';
+//import './assets/index.scss';
+//import App from './App';
 import Home from './components/Home';
-import ComingSoon from './components/ComingSoon';
+//import ComingSoon from './components/ComingSoon';
+import CurrentPint from './components/CurrentPint';
 //import {getArticles} from './api/api';
 
 
@@ -14,8 +15,8 @@ root.render(
   <Router>
    <div>
       <Routes>
-      <Route path="/" element={<ComingSoon />} />
-      <Route path="/articles" element={<Home />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/pint" element={<CurrentPint/>} />
       </Routes>
     </div>
   </Router>
