@@ -20,36 +20,17 @@ a {
 }
 
 .navbar {
-  //height: 10vh;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
   padding-top: 5vh;
-  //margin: 0;
-  //padding: 0;
-  //box-sizing: border-box;
-  //   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
-  //     "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
-  //     "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
-  //     monospace;
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
-
-  //padding: 2rem 1.5rem;
 }
 
 .navbar {
-  //height: 10vh;
   position: fixed;
   left: 50%;
   transform: translate(-50%, 0);
   padding-top: 5vh;
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
-
-  //padding: 2rem 1.5rem;
 }
 .bar {
   display: block;
@@ -58,7 +39,6 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
 }
 
 .nav-menu {

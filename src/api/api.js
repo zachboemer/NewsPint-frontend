@@ -19,7 +19,7 @@ export const getPintOfDay = async () => {
       throw error;
   }
 }
-
+// example for using the api to pass in a specific date
 // export const getPintOfDay = async (date) => {
 //   try{
 //       const response = await axios.get(`${baseURL}pint-of-day/${date}`);
