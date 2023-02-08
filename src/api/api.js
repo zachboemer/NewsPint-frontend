@@ -9,7 +9,7 @@ export const getAllArticles = async () => {
   }catch(error){
       throw error;
   }
-};
+}
 
 export const getPintOfDay = async () => {
   try{
@@ -19,6 +19,7 @@ export const getPintOfDay = async () => {
       throw error;
   }
 }
+
 // example for using the api to pass in a specific date
 // export const getPintOfDay = async (date) => {
 //   try{
