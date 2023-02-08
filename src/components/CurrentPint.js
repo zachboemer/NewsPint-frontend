@@ -28,29 +28,31 @@ const CurrentPint = () => {
         });
 
         return(
-        <Card  href={article.url} target="_blank" >
-            <Image src={article.image_url} wrapped ui={false}/>
-            <Card.Content>
-                <Header as='h2'>{article.title}</Header>
-                <CardMeta>{article.author}</CardMeta>
-                <CardMeta>{formattedDate}</CardMeta>
-                <Card.Description>{article.summary}</Card.Description>
-            </Card.Content>
-        </Card>
+
+        <div class="ui card">
+            <div class="image">
+                <img src={article.image_url} wrapped ui={false} />
+            </div>
+            <div class="content">
+                <a class="header">{article.title}</a>
+                <div class="meta">{article.author}</div>
+                <div class="meta">
+                    <span class="date">{formattedDate}</span>
+                </div>
+                <div class="description">{article.summary}</div>
+            </div>
+        </div>
         );
     };
 
     return (
-        <div style={{ marginTop: "20px" }}>
-            <Container>
-                <Grid columns={4} centered>
+        <div className="currentPint">
+            <div class="ui grid" >
                     {articles.map(article => (
-                        <Grid.Column key={article.id}>
                             <ArticleCard article={article} />
-                        </Grid.Column>
                     ))}
-                </Grid>
-            </Container>
+                    </div>
+            
         </div>
     );
 }
