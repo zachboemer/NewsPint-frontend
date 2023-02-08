@@ -1,55 +1,45 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@import url("https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css");
 
 li {
   list-style: none;
 }
 
-a {
-  color: white;
-  &:visited {
-    text-decoration: none;
-    //color: white;
+.navbar {
+  position: relative;
+  z-index: 1;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+  border-bottom: 1px solid darkslateblue;
+
+  .links {
+    margin-left: auto;
   }
-  &:focus {
+  a {
     text-decoration: none;
-    //color: white;
   }
 }
 
-.navbar {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  padding-top: 5vh;
-}
-
-.navbar {
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%, 0);
-  padding-top: 5vh;
-}
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+.nav-item {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .nav-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.nav-item {
-  //size: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  //margin-left: 2rem;
+.iconoir-home,
+.iconoir-glass-half,
+.iconoir-info-empty {
+  font-size: 2.3rem;
+  color: darkslateblue;
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+  }
 }

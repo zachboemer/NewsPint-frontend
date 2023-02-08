@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Fira+Code&display=swap");
+$background-light: #437ebd;
+$background-dark: #a6edf3;
+
+* {
+  font-family: "DM Sans";
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    $background-dark,
+    $background-light
+  );
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+}
