@@ -1,15 +1,19 @@
 .landing-page {
-  text-align: center;
-  padding: 100px;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.landing-page h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+  }
 
-.landing-page p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-bottom: 20px;
+  p {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 1rem;
+  }
 }

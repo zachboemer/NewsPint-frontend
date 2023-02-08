@@ -1,14 +1,9 @@
 import LandingPage from './LandingPage.js';
-import NavBar from './Navbar.js';
-import '../assets/home.scss';
+//import NavBar from './Navbar.js';
+//import '../assets/home.scss';
 
 const Home = () => {
-    return (
-        <div>
-            <NavBar/>
-            <LandingPage/>
-        </div>
-    )
+    return (<LandingPage/>)
 }
 
 export default Home;
