@@ -19,6 +19,7 @@ export const getPintOfDay = async () => {
       throw error;
   }
 }
+// maybe we will use this later
 
 // example for using the api to pass in a specific date
 // export const getPintOfDay = async (date) => {

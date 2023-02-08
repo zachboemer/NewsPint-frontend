@@ -1,10 +1,8 @@
 import React,  { useState, useEffect } from 'react';
 import axios from 'axios';
-//import beer from '../assets/beer.svg'
 import '../assets/landingPage.scss';
-//import { GridColumn } from 'semantic-ui-react';
 import GithubCard from './GithubCard';
-//import { Card, Image, Header, CardMeta, Container, Grid } from 'semantic-ui-react';
+
 const LandingPage = () => {
 
     const [githubData, setGithubData] = useState([]);
@@ -18,9 +16,6 @@ const LandingPage = () => {
         fetchData();
      }, []);
 
-
-
-
     return (
         <>
             <div className="landing-page-text">
@@ -31,14 +26,12 @@ const LandingPage = () => {
                     <p>Both the <a href="https://github.com/zachboemer/NewsPint-frontend">frontend</a> and <a href="https://github.com/zachboemer/NewsPint">backend</a> repositories are available for view.</p>
                     <h2>Cheers! 🍻</h2>
                 </header>
-                
             </div>
             <div className="github-card">
             {githubData.map((data) => (
                 <GithubCard githubData={data} key={data.id} />
             ))}
             </div>
-            
         </>
     );
 }
