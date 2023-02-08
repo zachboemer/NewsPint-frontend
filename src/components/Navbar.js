@@ -21,12 +21,6 @@ export default function NavBar() {
                             </a>
                         </li>
 
-                        <li className="nav-item">
-                            <a href="/about">
-                                <i class="iconoir-info-empty" ></i>
-                            </a>
-                        </li>
-
                     </ul>
             </nav>
 
