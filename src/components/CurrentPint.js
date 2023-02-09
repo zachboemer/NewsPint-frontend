@@ -33,7 +33,7 @@ const CurrentPint = () => {
                 <img src={article.image_url} wrapped ui={false} />
             </div>
             <div class="content">
-                <a class="header">{article.title}</a>
+                <a class="header" href={article.url} target="_blank">{article.title}</a>
                 <div class="meta">{article.author}</div>
                 <div class="meta">
                     <span class="date">{formattedDate}</span>
