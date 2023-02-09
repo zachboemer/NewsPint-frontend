@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { getPintOfDay } from '../api/api';
-import { Card, Image, Header, CardMeta, Container, Grid } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 import '../assets/currentPint.scss';
 
@@ -34,7 +33,7 @@ const CurrentPint = () => {
                 <img src={article.image_url} wrapped ui={false} />
             </div>
             <div class="content">
-                <a class="header">{article.title}</a>
+                <a class="header" href={article.url} target="_blank">{article.title}</a>
                 <div class="meta">{article.author}</div>
                 <div class="meta">
                     <span class="date">{formattedDate}</span>
