@@ -1,4 +1,5 @@
 import '../assets/unknownpage.scss';
+import logo from '../assets/beerglass.png'
 
 const UnknownPage = () => {
 
@@ -13,11 +14,12 @@ const UnknownPage = () => {
                     <a href="/">
                         <button className="home_btn">Go Home!</button>
                     </a>
-                </div>
-                <div class="pint_img">
-                    <img src="assets/beerglass.png" alt=""></img>
+                    <div class="pint_img">
+                    <img src={logo} alt="Beer Glass Image" width={50} height="100"/>
                     <div className="home_shadow"></div>
                 </div>
+                </div>
+                
             </div>
 
             

@@ -41,22 +41,28 @@
     }
   }
 
-.home_but{
-    font-size: 1.5rem;
-      color: #333;
-      text-align: center;
-      margin-top: 1rem;
-    margin-top: 2rem;
-    display: inline-block;
-    background-color: var(--text-color);
-    color: #333;
-    padding: .80rem 1.5rem;
-    border-radius: 3rem;
-    transition: .4s;
+.pint_img img{
+    animation: floaty 2s infinite alternate;
+    margin: 0 auto;
+    display: block;
+    color: darkslateblue;
+}
+
+.pint_img{
+    margin: 0 auto;
+}
+
+.home_shadow{
+    width: 130px;
+    height: 24px;
+    margin: 0 auto;
+    border-radius: 50%;
+    filter: blur((7px));
+    animation: shadow 2s inifinite alternate;
 }
 
 .home_btn{
-    margin:0 auto;
+    margin: 0 auto;
     display: block;
     color: darkslateblue;
     padding: .80rem 1.5rem;
@@ -86,7 +92,7 @@
 
     @keyframes shadow{
         0%{
-            transform: scale(1,1);
+            transform: scale(.9,.9);
         }
         100%{
             transform: scale(.85,.85);
