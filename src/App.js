@@ -13,7 +13,6 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/pint" element={<CurrentPint/>} />
-              <Route path="/404" element={<UnknownPage/>} />
               <Route path="/*" element={<UnknownPage/>} />
             </Routes>
           </Router>
